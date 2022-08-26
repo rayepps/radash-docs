@@ -91,7 +91,7 @@ export const documentationNav = {
     pages['series-series'],
   ],
   String: [
-    pages['string-camal'],
+    pages['string-camel'],
     pages['string-snake'],
     pages['string-dash'],
     pages['string-template'],
