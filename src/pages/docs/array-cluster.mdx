@@ -8,26 +8,29 @@ import { TestingLinkAndPreview } from '@/components/TestingLinkAndPreview'
 
 ## Basic usage
 
-Given an array of items and desired cluster count, returns an array containing `n` arrays (where n is the cluster count) with the items split as evenly as possible between each array.
+Given an array of items and a desired cluster size (`n`), returns an array 
+of arrays. Each child array containing `n` (cluster size) items
+split as evenly as possible.
 
 ```ts
 import { cluster } from 'radash'
 
-const gods = [{
-  name: 'Ra',
-  power: 100
-}, {
-  name: 'Zues',
-  power: 98
-}, {
-  name: 'Loki',
-  power: 72
-}, {
-  name: 'Vishnu',
-  power: 100
-}]
+const gods = [
+  'Ra', 
+  'Zeus', 
+  'Loki', 
+  'Vishnu', 
+  'Icarus', 
+  'Osiris',
+  'Thor'
+]
 
-cluster(gods, 2) // => [[ra, zues], [loki, vishnu]]
+cluster(gods, 3)
+// => [
+//   [ 'Ra', 'Zeus', 'Loki' ],
+//   [ 'Vishnu', 'Icarus', 'Osiris' ],
+//   [ 'Thor' ]
+// ]
 ```
 
 

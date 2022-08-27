@@ -8,25 +8,26 @@ import { TestingLinkAndPreview } from '@/components/TestingLinkAndPreview'
 
 ## Basic usage
 
-Given two arrays of items and an identity function, returns first list with all items from the second list where there was a match.
+Given two arrays of items and an identity function, returns the first 
+list with all items from the second list where there was a match.
 
 ```ts
 import { merge } from 'radash'
 
-const fish = [{
-  name: 'Marlin',
-  weight: 105,
+const gods = [{
+  name: 'Zeus',
+  power: 92,
 }, {
-  name: 'Trout',
-  weight: 8,
+  name: 'Ra',
+  power: 97,
 }]
 
-const newFish = [{
-  name: 'Trout',
-  weight: 13,
+const newGods = [{
+  name: 'Zeus',
+  power: 100,
 }]
 
-merge(fish, newFish, f => f.name) // => [marlin, trout (weight: 13)]
+merge(gods, newGods, f => f.name) // => [{name: "Zeus" power: 100}, {name: "Ra", power: 97}]
 ```
 
 ## Testing

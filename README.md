@@ -1,17 +1,19 @@
-# Tailwind CSS Documentation
+# Radash Documentation Website
 
-Tailwind CSS uses [Next.js](https://nextjs.org/) for its documentation. Here is how you can run the project locally:
+> Docs website for [Radash](https://github.com/rayepps/radash) as [radash-docs.vercel.app](https://radash-docs.vercel.app)
+
+The Radash docs are a fork of the [Tailwind CSS Documentation](https://github.com/tailwindlabs/tailwindcss.com) project which uses [Next.js](https://nextjs.org/). Here is how you can run the project locally:
 
 1. Clone this repo
 
     ```sh
-    git clone https://github.com/tailwindlabs/tailwindcss.com.git
+    git clone https://github.com/rayepps/radash-docs.git
     ```
 
 2. Go into the project root directory
 
     ```sh
-    cd tailwindcss.com
+    cd radash-docs
     ```
 
 3. Install JS dependencies

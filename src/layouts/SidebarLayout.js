@@ -255,7 +255,7 @@ function TopLevelNav({ mobile }) {
       </TopLevelLink>
       <TopLevelLink
         mobile={mobile}
-        href="https://codesandbox.io/s/radash-playground-vlnd6x?file=/src/index.ts"
+        href="https://npm.runkit.com/radash"
         className="mb-4"
         shadow="group-hover:shadow-blue-200 "
         icon={
