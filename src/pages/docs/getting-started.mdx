@@ -86,7 +86,7 @@ const godsByCulture = _.objectify(gods, g => g.name, g => g.culture)
 
 ### Lodash
 
-Lodash was incredible. When Javascript was still maturing, it provided the power to things you couldn't
+Lodash was incredible. When JavaScript was still maturing, it provided the power to things you couldn't
 easily do in the vanilla. That was last decade. In this decade, the needs are different. The goal with Radash
 is to provide the powerful functions you need, not the ones the runtimes now provide, and to do it with great types
 and source code that's easy to read and understand.
@@ -96,7 +96,7 @@ and source code that's easy to read and understand.
 Radash does not provide `_.map` or `_.filter` functions. They were helpful before optional chaining and nullish coalescing.
 Now, there really isn't a need.  
 
-In the last ten years, the javascript community as a whole, and the Typescript community specifically, has moved
+In the last ten years, the JavaScript community as a whole, and the Typescript community specifically, has moved
 closer to some key values: **deterministic is good, polymorphic is bad, strong types are everything**. A part of Lodash's
 charm was that it let you pass different types to a function and get other behavior based on the type. An example 
 is the `_.map` function, which can take a collection or an object and map over either. Radash doesn't provide that
