@@ -26,7 +26,7 @@ const fish = [{
   weight: 13
 }]
 
-objectify(fisth, f => f.name) // => { Marlin: [marlin object], Bass: [bass object], ... }
+objectify(fish, f => f.name) // => { Marlin: [marlin object], Bass: [bass object], ... }
 objectify(fish, f => f.name, f => f.weight) // => { Marlin: 105, Bass: 8, Trout: 13 }
 ```
 
