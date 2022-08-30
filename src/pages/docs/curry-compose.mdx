@@ -15,14 +15,14 @@ import { compose } from 'radash'
 
 const useZero = (fn: any) => () => fn(0)
 const objectize = (fn: any) => (num: any) => fn({ num })
-const incrament = (fn: any) => ({ num }: any) => fn({ num: num + 1 })
+const increment = (fn: any) => ({ num }: any) => fn({ num: num + 1 })
 const returnArg = (arg: any) => (args: any) => args[arg]
 
 const composed = compose(
   useZero,
   objectize,
-  incrament,
-  incrament,
+  increment,
+  increment,
   returnArg('num')
 )
 
@@ -35,8 +35,8 @@ This can be a little jarring if you haven't seen it before. Here's a broken down
 const decomposed = (
   useZero(
     objectize(
-      incrament(
-        incrament(
+      increment(
+        increment(
           returnArg('num')))))
 )
 
