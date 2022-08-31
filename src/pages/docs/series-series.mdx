@@ -15,7 +15,7 @@ import { series } from 'radash'
 
 type Weekday = 'monday' | 'tuesday' | 'wednesday' | 'thursday' | 'friday';
 
-const weekdays = _.series<Weekday>(
+const weekdays = series<Weekday>(
   'monday',
   'tuesday',
   'wednesday',

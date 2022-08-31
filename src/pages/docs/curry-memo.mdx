@@ -13,7 +13,7 @@ Wrap a function with memo to get a function back that automagically returns valu
 ```ts
 import { memo } from 'radash'
 
-const timestamp = _.memo(() => Date.now())
+const timestamp = memo(() => Date.now())
 
 const now = timestamp()
 const later = timestamp()
@@ -28,7 +28,7 @@ You can optionally pass a `ttl` (time to live) that will expire memoized results
 ```ts
 import { memo, sleep } from 'radash'
 
-const timestamp = _.memo(() => Date.now(), {
+const timestamp = memo(() => Date.now(), {
   ttl: 1000 // milliseconds
 })
 
@@ -48,7 +48,7 @@ now === muchLater // => false
 You can optionally customize how values are stored when memoized.
 
 ```ts
-const timestamp = _.memo(({ group }: { group: string }) => {
+const timestamp = memo(({ group }: { group: string }) => {
   const ts = Date.now()
   return `${ts}::${group}`
 }, {

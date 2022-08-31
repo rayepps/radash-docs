@@ -17,7 +17,7 @@ const genesis = () => 0
 const addFive = (num: number) => num + 5
 const twoX = (num: number) => num * 2
 
-const chained = _.chain(
+const chained = chain(
   genesis,
   addFive,
   twoX
