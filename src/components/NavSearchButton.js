@@ -33,14 +33,29 @@ export function NavSearchButton({ children, ...props }) {
   }
 
   useEffect(() => {
+    let pressed = null
+
     function onKeyDown(event) {
-      if (/[a-zA-Z0-9]/.test(String.fromCharCode(event.keyCode))) {
+      if (!pressed && /[a-zA-Z0-9]/.test(String.fromCharCode(event.keyCode))) {
         focus()
       }
+
+      pressed = event
     }
+
+    function onKeyUp(event) {
+      if (event.keyCode === pressed?.keyCode) {
+        pressed = null
+      }
+
+    }
+
     window.addEventListener('keydown', onKeyDown)
+    window.addEventListener('keyup', onKeyUp)
+
     return () => {
       window.removeEventListener('keydown', onKeyDown)
+      window.removeEventListener('keyup', onKeyUp)
     }
   }, [])
 
