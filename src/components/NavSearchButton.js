@@ -89,7 +89,7 @@ export function NavSearchButton({ children, ...props }) {
         />
       </svg>
       <input
-        className="grow"
+        className="grow w-full"
         type="text"
         ref={inputRef}
         onChange={onInput}
