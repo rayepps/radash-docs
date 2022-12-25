@@ -1,3 +1,5 @@
+This repo is no longer used. The radash docs now live in the [Radash](https://github.com/rayepps/radash) repo with the code and the site is generated using [Chiller](https://github.com/rayepps/chiller)
+
 # Radash Documentation Website
 
 > Docs website for [Radash](https://github.com/rayepps/radash) as [radash-docs.vercel.app](https://radash-docs.vercel.app)
