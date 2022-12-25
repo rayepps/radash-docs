@@ -40,6 +40,7 @@ export const documentationNav = {
     pages['array-range'],
     pages['array-list'],
     pages['array-sift'],
+    pages['array-shift'],
     pages['array-diff'],
   ],
   Async: [
@@ -61,10 +62,7 @@ export const documentationNav = {
     pages['curry-debounce'],
     pages['curry-throttle'],
   ],
-  Number: [
-    pages['number-to-int'],
-    pages['number-to-float'],
-  ],
+  Number: [pages['number-to-int'], pages['number-to-float']],
   Object: [
     pages['object-shake'],
     pages['object-map-keys'],
@@ -88,9 +86,7 @@ export const documentationNav = {
     pages['typed-is-number'],
     pages['typed-is-empty'],
   ],
-  Series: [
-    pages['series-series'],
-  ],
+  Series: [pages['series-series']],
   String: [
     pages['string-camal'],
     pages['string-snake'],
